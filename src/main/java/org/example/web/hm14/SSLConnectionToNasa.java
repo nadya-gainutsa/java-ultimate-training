@@ -14,6 +14,14 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+/**
+ * SSL call to NASA
+ * 1. Open a secure socket connection to api.nasa.gov
+ * 2. Using socket API, get all pictures from this URL
+ * 3. Parse the response
+ * 4. Find the original url (img_src value) and the size of the largest picture
+ */
+
 public class SSLConnectionToNasa {
     public static final String URL = "/mars-photos/api/v1/rovers/curiosity/photos?sol=16&api_key=DEMO_KEY";
     public static final String EMPTY = "";
