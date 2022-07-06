@@ -39,19 +39,21 @@ public class ApplicationContextImpl implements ApplicationContext {
 
     private String resolveName(Class<?> type) {
         var annotationValue = type.getAnnotation(LikeBean.class).value();
-        return annotationValue.isBlank() ? type.getSimpleName() : annotationValue;
+        return annotationValue.isBlank() ? type.getSimpleName().substring(0, 1).toLowerCase() + type.getSimpleName().substring(1)
+                                        : annotationValue;
     }
 
     @Override
     public <T> T getBean(Class<T> beanType) throws NoSuchBeanException, NoUniqueBeanException {
-        var beanStreams = beansContainer.values().stream()
+        var beans = beansContainer.values().stream()
                 .filter(b -> b.getClass().isAssignableFrom(beanType))
-                .map(beanType::cast);
-        if (beanStreams.count() > 1) {
-            throw new NoUniqueBeanException();
-        } else {
-            return beanStreams.findAny().orElseThrow(NoSuchBeanException::new);
-        }
+                .map(beanType::cast)
+                .collect(Collectors.toList());
+        if (beans.size() > 1) {
+            throw new NoUniqueBeanException(beanType.getSimpleName());
+        } else if (beans.size() == 0) {
+            throw new NoSuchBeanException(beanType.getSimpleName());
+        } else return beans.get(0);
     }
 
     @Override
@@ -60,7 +62,7 @@ public class ApplicationContextImpl implements ApplicationContext {
         if (bean != null) {
             return beanType.cast(bean);
         } else {
-            throw new NoSuchBeanException();
+            throw new NoSuchBeanException(name);
         }
     }
 
@@ -70,4 +72,5 @@ public class ApplicationContextImpl implements ApplicationContext {
                 .filter(b -> b.getValue().getClass().isAssignableFrom(beanType))
                 .collect(Collectors.toMap(Map.Entry::getKey, b -> beanType.cast(b.getValue())));
     }
+
 }
