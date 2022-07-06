@@ -1,4 +1,4 @@
-package org.example.web.hm14;
+package org.example.web.hw14;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.SneakyThrows;
