@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="272325f7-1450-4595-949e-ef1ecd9dba9c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/web/hw15/demo/service/Square.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/web/hw15/context/ApplicationContextImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/web/hw15/context/ApplicationContextImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/web/hw15/demo/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/web/hw15/demo/Demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/web/hw15/exception/NoSuchBeanException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/web/hw15/exception/NoSuchBeanException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/web/hw15/exception/NoUniqueBeanException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/web/hw15/exception/NoUniqueBeanException.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,15 +61,65 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SSLConnectionToNasa" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.web.hw14.SSLConnectionToNasa" />
+    <configuration name="ApplicationContextImpTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-ultimate-training" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.web.hw14.*" />
+          <option name="PATTERN" value="org.example.web.hw15.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="org.example.web.hw15" />
+      <option name="MAIN_CLASS_NAME" value="org.example.web.hw15.ApplicationContextImpTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApplicationContextImpTest.getBeanByNameAndTypeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-ultimate-training" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.web.hw15.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.web.hw15" />
+      <option name="MAIN_CLASS_NAME" value="org.example.web.hw15.ApplicationContextImpTest" />
+      <option name="METHOD_NAME" value="getBeanByNameAndTypeTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApplicationContextImpTest.getBeanByTypeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-ultimate-training" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.web.hw15.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.web.hw15" />
+      <option name="MAIN_CLASS_NAME" value="org.example.web.hw15.ApplicationContextImpTest" />
+      <option name="METHOD_NAME" value="getBeanByTypeTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApplicationContextImpTest.isNotAnnotatedInContextTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-ultimate-training" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.web.hw15.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.web.hw15" />
+      <option name="MAIN_CLASS_NAME" value="org.example.web.hw15.ApplicationContextImpTest" />
+      <option name="METHOD_NAME" value="isNotAnnotatedInContextTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -80,6 +127,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Demo" />
+        <item itemvalue="JUnit.ApplicationContextImpTest" />
+        <item itemvalue="JUnit.ApplicationContextImpTest.getBeanByTypeTest" />
+        <item itemvalue="JUnit.ApplicationContextImpTest.getBeanByNameAndTypeTest" />
+        <item itemvalue="JUnit.ApplicationContextImpTest.isNotAnnotatedInContextTest" />
       </list>
     </recent_temporary>
   </component>
@@ -114,29 +165,22 @@
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/web/hw15/context/ApplicationContextImpl.java</url>
-          <line>51</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/web/hw15/context/ApplicationContextImpl.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/web/hw15/context/ApplicationContextImpl.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/web/hw15/context/ApplicationContextImpl.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/web/hw15/demo/Demo.java</url>
           <line>15</line>
           <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/web/hw15/context/ApplicationContextImpl.java</url>
+          <line>48</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/web/hw15/ApplicationContextImpTest.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

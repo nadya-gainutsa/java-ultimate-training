@@ -46,7 +46,7 @@ public class ApplicationContextImpl implements ApplicationContext {
     @Override
     public <T> T getBean(Class<T> beanType) throws NoSuchBeanException, NoUniqueBeanException {
         var beans = beansContainer.values().stream()
-                .filter(b -> b.getClass().isAssignableFrom(beanType))
+                .filter(b -> b.getClass().equals(beanType))
                 .map(beanType::cast)
                 .collect(Collectors.toList());
         if (beans.size() > 1) {
